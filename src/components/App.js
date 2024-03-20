@@ -1,2 +1,16 @@
-<p>Now I can render any React component on any DOM node I want using ReactDOM.render</p>
+import React, { useState }  from "react";
+import Navbar from "./navbar";
+import List from "./list";
+import "../styles/App.css";
 
+const App = () => {
+    const [categeory , setCategeory] = useState("All");
+    return (
+        <>
+            <Navbar setCategeory={setCategeory}/>
+            <List categeory={categeory} setCategeory={setCategeory}/>
+        </>
+    )
+}
+
+export default App;

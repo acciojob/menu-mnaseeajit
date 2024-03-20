@@ -10,3 +10,16 @@ button{
     justify-content: center;
     align-items: center;
 }
+
+#list{
+    display: flex;
+    flex-wrap : wrap;
+    justify-content: space-between;
+}
+
+#list>div{
+   width : 400px;
+}
+#categeories{
+    text-align: center;
+}
